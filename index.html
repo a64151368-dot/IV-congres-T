@@ -398,6 +398,125 @@ footer p{opacity:1;color:var(--ink-2)}
 footer nav a{border-color:var(--green);color:var(--green)}
 footer nav a:hover{background:var(--sun);border-color:var(--sun);color:#2A2108}
 @media (max-width:860px){.edit article{border-right:1px solid var(--rule)!important;border-bottom:1px solid var(--rule)}}
+
+/* ════ ОСІННІЙ ВАЙБ · ЛИСТОПАД ════ */
+:root{
+  --paper:#F7EEDD; --paper-2:#EFE0C3; --card:#FFFAF0; --cream:#FBEBCB; --ink:#2A1C12; --ink-2:#5A4334; --rule:#E2CDA8;
+  --green:#5E6B2E; --green-2:#7A8A3A; --sun:#E3A33B; --sun-soft:#F6D49A; --coral:#C8552B;
+  --pumpkin:#D9772E; --rust:#A8451F; --berry:#8E2F2A; --olive:#6F7A35;
+}
+body{background:
+  radial-gradient(900px 600px at 105% -5%,rgba(217,119,46,.22) 0%,transparent 60%),
+  radial-gradient(800px 700px at -10% 35%,rgba(142,47,42,.12) 0%,transparent 60%),
+  radial-gradient(900px 700px at 110% 80%,rgba(111,122,53,.16) 0%,transparent 60%),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E"),
+  var(--paper)}
+.bar{background:rgba(247,238,221,.9);border-bottom-color:var(--rule)}
+.logo{color:var(--rust)}
+.bar nav a:hover{background:var(--sun-soft)}
+/* cover */
+.cover::after{background:linear-gradient(180deg,rgba(40,18,6,.55) 0%,rgba(60,25,8,.1) 28%,rgba(60,25,8,.08) 50%,rgba(70,28,8,.72) 86%,rgba(50,20,6,.9) 100%)}
+.cover>img{filter:sepia(.18) saturate(1.08) contrast(1.03)}
+.mast .issue b{color:#F2B24A}
+.autumn-tag{display:inline-block;margin-top:8px;padding:4px 10px;border-radius:999px;background:var(--pumpkin);color:#fff;font-size:9.5px;letter-spacing:.16em}
+.headline .kick,.headline h1 em{color:#F2B24A}
+.lines a:hover b{color:#F2B24A}
+.fall{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.lf{position:absolute;top:-40px;opacity:.85;animation-name:fall;animation-timing-function:linear;animation-iteration-count:infinite;filter:drop-shadow(0 2px 2px rgba(0,0,0,.25))}
+.lf.b{animation-name:fall2}
+@keyframes fall{0%{transform:translate(0,-40px) rotate(0)}25%{transform:translate(30px,25vh) rotate(90deg)}50%{transform:translate(-20px,50vh) rotate(180deg)}75%{transform:translate(25px,75vh) rotate(270deg)}100%{transform:translate(-10px,110vh) rotate(360deg)}}
+@keyframes fall2{0%{transform:translate(0,-40px) rotate(0) scaleX(1)}30%{transform:translate(-35px,30vh) rotate(-120deg) scaleX(-1)}60%{transform:translate(20px,60vh) rotate(-220deg) scaleX(1)}100%{transform:translate(-25px,110vh) rotate(-360deg) scaleX(-1)}}
+.cover .wrap{position:relative;z-index:2}
+/* letter & toc */
+.letter p.lead::first-letter{color:var(--rust)}
+.sig{border-top-color:var(--rust)}.sig .kick{color:var(--pumpkin)}
+.toc{background:rgba(255,250,240,.6)}
+.toc a i{color:var(--pumpkin)}
+/* headings */
+section{position:relative}
+.sh,.fold summary{border-bottom-color:var(--ink)}
+.sh .no,.fold .no{color:transparent;-webkit-text-stroke:2px var(--rust);background:linear-gradient(180deg,var(--pumpkin),var(--berry));-webkit-background-clip:text;background-clip:text}
+.sh h2 em,.d-cols h3 em,.comp h3 em,.st-head h3 em,.advent h3 em,.chap>header h3 em{color:var(--rust)}
+.kick{color:inherit}
+.chap>header .kick,.prob .kick,.pq .kick,.res .kick,.edit .tag,.advent .tag,.sig .kick{color:var(--pumpkin)!important}
+.deco{position:absolute;width:64px;height:64px;opacity:.9;pointer-events:none;z-index:0}
+.deco.d1{right:-8px;top:-30px;transform:rotate(25deg)}
+.deco.d2{right:30px;top:-36px;transform:rotate(-30deg)}
+.deco.d3{right:-4px;top:-28px;transform:rotate(15deg)}
+.deco.d4{right:30px;bottom:20px;top:auto;width:90px;height:90px;transform:rotate(-20deg);opacity:.35}
+/* dossier */
+.tgl{background:var(--rust)}.fold summary:hover .tgl{background:var(--berry)}
+.tgl i{background:#F2B24A}
+.nums b{color:var(--rust)}
+.comp .row div:nth-child(1){border-color:var(--olive)}
+.comp .row div:nth-child(2){border-color:var(--sun)}
+.comp .row div:nth-child(3){border-color:var(--pumpkin)}
+.comp .row div:nth-child(4){border-color:var(--berry)}
+.spk li::before,.mcs li::before{color:var(--pumpkin)}
+.mcs li.star::before{background:#F2B24A}
+/* quote */
+.pq{background:linear-gradient(90deg,#FBE6C4,rgba(251,230,196,0));border-color:var(--rule)}
+.pq blockquote::before{color:var(--pumpkin)}
+.vbox .ring-txt text{fill:var(--rust)}
+.vcircle .play{background:#F2B24A}
+/* feature */
+.feat-top .lead::first-letter{color:var(--rust)}
+.prob{border-left-color:var(--pumpkin)}
+.portrait::after{background:var(--pumpkin);opacity:.85}
+.portrait figcaption{background:var(--rust)}
+.route li::before{-webkit-text-stroke-color:var(--rust)}
+.route li:last-child::before{color:#F2B24A;-webkit-text-stroke-color:#D9962E}
+.asks li{color:var(--rust)}
+.ways li{border-color:var(--rust);color:var(--rust);background:#FFFAF0}
+.ways li:hover{background:var(--rust);color:#fff}
+.hl{background:linear-gradient(transparent 58%,var(--sun-soft) 58%,var(--sun-soft) 92%,transparent 92%)}
+.verdict{background:linear-gradient(135deg,#FBE3BE 0%,#F3D2B4 55%,#E9DCB8 100%)}
+.verdict::after{background:var(--pumpkin);opacity:.45}
+.verdict .kick{color:var(--rust)}
+.verdict p.big em{color:var(--rust)}
+.voices span{background:var(--rust)}
+/* 03 */
+.giant{color:transparent;background:linear-gradient(170deg,#E3A33B 0%,#C8552B 50%,#8E2F2A 100%);-webkit-background-clip:text;background-clip:text}
+.vr-top blockquote em{color:var(--rust)}
+.formula{background:linear-gradient(135deg,#F6E1BC 0%,#EFD6B8 100%)!important}
+.formula .kick{color:var(--rust)}
+.chain li:not(:last-child)::after{color:var(--pumpkin)}
+.chain li.goal{background:var(--pumpkin);color:#fff}
+.stk.s1{background:#F6D7A7}.stk.s2{background:#E9C9B5}.stk.s3{background:#F3E2A0}.stk.s4{background:#DCDDB6}
+.stk .more{color:var(--rust)}
+.res a small{background:var(--sun-soft)}
+.res a .ar{border-color:var(--rust);color:var(--rust)}
+.res a:hover .ar{background:var(--rust);color:#fff}
+.belief::before,.belief::after{background:var(--pumpkin)}
+/* 04 */
+.edit article{background:#FFFAF0}
+.edit article:nth-child(2){background:#FBEBCB}
+.advent{background:linear-gradient(135deg,#FBE6C4 0%,#F4D8BE 100%);border-color:#E9C79A}
+.dd{background:#FFFAF0;border-color:#E4C99E}
+.dd.open.b1{background:var(--rust);border-color:var(--rust)}
+.dd.open.b2{background:#F2B24A;border-color:#F2B24A}
+.dd.open.b3{background:#C9C98A;border-color:#C9C98A}
+.dd.b1:not(.open)::after{background:var(--rust)}.dd.b2:not(.open)::after{background:#E3A33B}.dd.b3:not(.open)::after{background:var(--olive)}
+.leg i[style*="#14533A"]{background:var(--rust)!important}
+.leg i[style*="#BFE6C9"]{background:#C9C98A!important}
+.btn{border-color:var(--rust);color:var(--rust)}
+.btn.dark{background:var(--rust);border-color:var(--rust);color:#fff}
+.btn.dark:hover{background:var(--berry);border-color:var(--berry)}
+footer{background:linear-gradient(120deg,#E9C79A 0%,#E2B08A 50%,#C9C98A 100%)}
+footer .logo{color:var(--berry)}
+footer nav a{border-color:var(--berry);color:var(--berry)}
+@media (max-width:860px){.deco{width:44px;height:44px}.lf:nth-child(n+9){display:none}}
+@media (prefers-reduced-motion:reduce){.fall{display:none}}
+
+/* ── правки ── */
+.fall.page{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.fall.page .lf{opacity:.55;filter:none}
+body{isolation:auto}
+.portrait::after{display:none}
+.giant{background:none;color:inherit;line-height:1;display:flex;align-items:flex-end;gap:14px}
+.giant .g5{display:block;font-size:inherit;line-height:1;padding:.04em .06em 0;color:transparent;background:linear-gradient(170deg,#E3A33B 0%,#C8552B 50%,#8E2F2A 100%);-webkit-background-clip:text;background-clip:text}
+.giant small{position:static;transform:none;padding-bottom:.35em;white-space:normal}
+@media (max-width:860px){.fall.page .lf:nth-child(n+9){display:none}}
 </style>
 </head>
 <body>
@@ -414,7 +533,7 @@ footer nav a:hover{background:var(--sun);border-color:var(--sun);color:#2A2108}
   <div class="wrap">
     <div class="mast">
       <div class="name">Тьютор<i>инг</i></div>
-      <div class="issue"><b>VI</b>Міжнародний конгрес<br>Листопад 2024</div>
+      <div class="issue"><b>VI</b>Міжнародний конгрес<br>Листопад 2024<span class="autumn-tag">осінній випуск</span></div>
     </div>
     <div class="lines">
       <a href="#s02"><b>Від ідей до практики</b><span>персоналізація і життєстійкість</span></a>
@@ -515,7 +634,7 @@ footer nav a:hover{background:var(--sun);border-color:var(--sun);color:#2A2108}
   </div>
 </div>
 
-<section id="s02">
+<section id="s02"><svg class="deco d1" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l1.6 3.6 3.2-1.4-.8 3.6 3.6.4-2.6 2.6 2.4 1.8-3.6 1-.2 3.4-3-2-1.6 3.4L10.4 15l-3 2-.2-3.4-3.6-1 2.4-1.8L3.4 8.2 7 7.8l-.8-3.6 3.2 1.4z" fill="#E08A2E"/><path d="M12 6v15" stroke="rgba(60,25,10,.3)" stroke-width=".7"/></svg>
   <div class="sh"><span class="no">02</span><h2>Від ідей <em>до практики</em></h2><span class="kick">тьюторинг · персоналізація · життєстійкість</span></div>
 
   <div class="feat-top">
@@ -565,7 +684,7 @@ footer nav a:hover{background:var(--sun);border-color:var(--sun);color:#2A2108}
 
   <p class="env">Персоналізоване навчання, тьюторський діалог, рефлексія і підтримувальна комунікація разом створюють середовище, де учень не боїться ставити запитання, визнавати труднощі й пробувати знову. <span class="hl">Це і є життєстійкість у щоденному навчанні.</span></p>
 
-  <div class="verdict">
+  <div class="verdict"><svg class="deco d4" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l1.6 3.6 3.2-1.4-.8 3.6 3.6.4-2.6 2.6 2.4 1.8-3.6 1-.2 3.4-3-2-1.6 3.4L10.4 15l-3 2-.2-3.4-3.6-1 2.4-1.8L3.4 8.2 7 7.8l-.8-3.6 3.2 1.4z" fill="#C8552B"/><path d="M12 6v15" stroke="rgba(60,25,10,.3)" stroke-width=".7"/></svg>
     <span class="kick">Мій професійний висновок</span>
     <p class="big">Подолання освітніх втрат — це не лише надолуження знань, а й <em>відновлення віри дитини у власні можливості.</em></p>
     <div class="voices">
@@ -576,11 +695,11 @@ footer nav a:hover{background:var(--sun);border-color:var(--sun);color:#2A2108}
   </div>
 </section>
 
-<section id="s03">
+<section id="s03"><svg class="deco d2" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2c1.5 1 1 2.6 2.4 3 1.6.4 2.6-.6 3 1s-1.4 2-.6 3.2 2.4.8 2.2 2.4-2 1.2-2 2.6 1.4 2.2.2 3.2-2.4-.2-3.2.8-.4 2.8-2 2.8-1-1.8-2-2.8-2.4.6-3.2-.6 1-2.2.2-3.2-2.4-.4-2.4-2 1.8-1.6 2.2-2.6S4 8.6 5.4 7.6 8 8 8.8 6.6 10.6 3 12 2z" fill="#B23A2A"/><path d="M12 6v15" stroke="rgba(60,25,10,.3)" stroke-width=".7"/></svg>
   <div class="sh"><span class="no">03</span><h2>Виховна робота <em>онлайн</em></h2><span class="kick">від цифрового контакту — до довіри</span></div>
 
   <div class="vr-top">
-    <div class="giant">5<small>років онлайн<br>з 5 до 9 класу</small></div>
+    <div class="giant"><span class="g5">5</span><small>років онлайн<br>разом із моїм класом</small></div>
     <blockquote>П'ять років дистанційного навчання навчили мене бачити за екраном не просто учня, який має бути на уроці, а особистість, якій потрібні <em>довіра, вибір і підтримка</em>.</blockquote>
   </div>
   <p class="vr-text">Моє завдання як класного керівника — створити умови, щоб кожна дитина лишалася частиною колективу, знаходила власний шлях до навчання й поступово відновлювала впевненість у своїх силах. В умовах війни за кожним екраном — дитина зі своїми тривогами і своїм темпом адаптації.</p>
@@ -618,7 +737,7 @@ footer nav a:hover{background:var(--sun);border-color:var(--sun);color:#2A2108}
   <blockquote class="belief">Подолання освітніх втрат починається там, де дитина відчуває безпеку, довіру й право на власний темп.</blockquote>
 </section>
 
-<section id="s04">
+<section id="s04"><svg class="deco d3" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2c4 3 6 7 5 11-1 3.5-3 6-5 7-2-1-4-3.5-5-7-1-4 1-8 5-11z" fill="#D9A43A"/><path d="M12 6v15" stroke="rgba(60,25,10,.3)" stroke-width=".7"/></svg>
   <div class="sh"><span class="no">04</span><h2>Що можу запропонувати <em>колегам</em></h2><span class="kick">моя добірка</span></div>
   <div class="edit">
     <article><span class="tag">практика</span><h3>Хід онлайн-заняття на 6 кроків</h3><p><span class="hl">Від check-in до check-out, з місцем для рухової паузи й дихальної вправи на випадок тривоги.</span></p></article>
