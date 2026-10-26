@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Тьюторинг і життєстійкість</title>
-<meta name="description" content="VI Міжнародний конгрес тьюторингу і досвід Алли Сіянко, Вищетарасівський ліцей">
+<meta name="description" content="VI Міжнародний конгрес тьюторингу і досвід Алли Сіянко, Вищетарасівський ліцей: персоналізація, виховна робота онлайн, партнерство з батьками">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&family=Caveat:wght@600;700&display=swap">
@@ -55,7 +55,8 @@ a{color:inherit}
 .bar nav a:nth-child(1):hover{background:var(--pumpkin-soft)}
 .bar nav a:nth-child(2):hover{background:var(--gold-soft)}
 .bar nav a:nth-child(3):hover{background:var(--berry-soft)}
-.bar nav a:nth-child(4):hover{background:var(--leaf-soft)}
+.bar nav a:nth-child(4):hover{background:var(--sky-soft)}
+.bar nav a:nth-child(5):hover{background:var(--leaf-soft)}
 .bar nav a:hover{transform:translateY(-1px);color:var(--ink)}
 
 /* ── COVER: картка, фото без накладень ── */
@@ -72,7 +73,7 @@ a{color:inherit}
 .mast .issue b{display:block;font-size:clamp(26px,3vw,34px);font-weight:900;line-height:1;color:#fff;letter-spacing:0;margin-bottom:2px}
 .autumn-tag{display:block;margin:4px auto 0;padding:2px 6px;border-radius:999px;background:#fff;color:var(--rust);font-size:8px;letter-spacing:.06em}
 .cover>img{order:2;grid-column:1/-1;position:static;width:100%;height:auto;aspect-ratio:1700/860;object-fit:cover;object-position:center 72%;border-radius:22px;filter:none;transform:none}
-.headline{order:3;grid-column:1;grid-row:auto;display:grid;gap:8px;align-content:center;max-width:none;padding:16px 20px;border-radius:22px;background:linear-gradient(120deg,var(--gold-soft),var(--pumpkin-soft) 55%,var(--berry-soft));text-shadow:none}
+.headline{order:3;grid-column:1/-1;grid-row:auto;display:grid;gap:8px;align-content:center;max-width:none;padding:16px 20px;border-radius:22px;background:linear-gradient(120deg,var(--gold-soft),var(--pumpkin-soft) 55%,var(--berry-soft));text-shadow:none}
 .headline .kick{justify-self:start;display:inline-flex;align-items:center;gap:8px;font-size:11px;padding:5px 12px 5px 9px;border-radius:999px;background:#fff;color:var(--rust)}
 .headline .kick::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
 .headline h1{font-size:clamp(28px,4vw,50px);line-height:1.04;letter-spacing:-.01em}
@@ -100,13 +101,14 @@ a{color:inherit}
 /* toc з гірляндою листя */
 .toc{position:relative;padding-block:40px 0;background:transparent;border:0}
 .toc::before{content:"";position:absolute;left:0;right:0;top:4px;height:30px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 30'%3E%3Cpath d='M0 8 Q45 22 90 8 T180 8' stroke='%23B9865A' stroke-width='1.6' fill='none'/%3E%3Cpath d='M22 14c-6 2-9 8-6 14 6-2 9-8 6-14z' fill='%23FF8A3D'/%3E%3Cpath d='M58 15c5 3 7 9 3 14-5-3-7-9-3-14z' fill='%23FFC23D'/%3E%3Cpath d='M94 9c-5 3-6 10-2 14 5-3 6-10 2-14z' fill='%23E2506B'/%3E%3Cpath d='M128 13c6 1 10 7 8 13-6-1-10-7-8-13z' fill='%236FAF3A'/%3E%3Cpath d='M160 15c-6 2-8 8-5 13 6-2 8-8 5-13z' fill='%23E0652A'/%3E%3C/svg%3E") 0 0/180px 30px repeat-x}
-.toc .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.toc .wrap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
 .toc a{display:flex;align-items:center;gap:10px;padding:9px 14px 9px 10px;text-decoration:none;border-radius:999px;background:#fff;box-shadow:var(--shadow-sm);border:0;margin:0;transition:transform .2s}
 .toc a:hover{transform:translateY(-2px) rotate(-.5deg);background:#fff}
 .toc a i{font-style:normal;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:13px;background:var(--pumpkin);color:#fff!important;flex:none}
 .toc a:nth-child(2) i{background:var(--gold);color:#5A3D00!important}
 .toc a:nth-child(3) i{background:var(--berry)}
-.toc a:nth-child(4) i{background:var(--leaf)}
+.toc a:nth-child(4) i{background:var(--sky)}
+.toc a:nth-child(5) i{background:var(--leaf)}
 .toc a b{font-family:var(--round);font-size:16px;line-height:1.2;font-weight:800;color:var(--ink)}
 
 main{display:block;padding-block:clamp(26px,3.5vw,40px) 44px}
@@ -123,12 +125,14 @@ section{position:relative;display:grid;gap:16px}
 .sh .no,.fold .no{grid-row:span 2;width:clamp(52px,6vw,64px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-family:var(--round);font-weight:900;font-size:clamp(20px,2.4vw,26px);line-height:1;letter-spacing:0;color:#fff;-webkit-text-stroke:0;background:var(--pumpkin);-webkit-background-clip:border-box;background-clip:border-box;transform:rotate(-6deg);box-shadow:var(--shadow-sm)}
 #s02 .sh .no{background:var(--gold);color:#5A3D00}
 #s03 .sh .no{background:var(--berry)}
-#s04 .sh .no{background:var(--leaf)}
+#s04 .sh .no{background:var(--sky)}
+#s05 .sh .no{background:var(--leaf)}
 .sh h2,.fold h2{font-size:clamp(28px,3.8vw,44px);letter-spacing:-.01em}
 .sh h2 em{font-family:var(--hand);font-style:normal;font-weight:700;color:var(--rust);font-size:1.15em}
 #s02 .sh h2 em{color:#E09A00}
 #s03 .sh h2 em{color:var(--berry)}
-#s04 .sh h2 em{color:var(--leaf)}
+#s04 .sh h2 em{color:var(--sky)}
+#s05 .sh h2 em{color:var(--leaf)}
 .sh .kick{color:var(--ink-2)}
 
 /* 01 fold */
@@ -286,11 +290,12 @@ section{position:relative;display:grid;gap:16px}
 .belief::after{content:"";display:none}
 
 /* 04 */
-.edit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;border:0}
+.edit{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;border:0}
 .edit article{padding:16px 18px;border:0!important;border-radius:var(--r-md);margin:0;background:#fff;box-shadow:var(--shadow-sm);display:grid;gap:6px;align-content:start}
 .edit article:nth-child(1){border-top:6px solid var(--pumpkin)!important}
 .edit article:nth-child(2){background:#fff;border-top:6px solid var(--gold)!important}
 .edit article:nth-child(3){border-top:6px solid var(--berry)!important}
+.edit article:nth-child(4){border-top:6px solid var(--sky)!important}
 .edit .tag{justify-self:start;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 10px;border-radius:999px;background:var(--pumpkin-soft);color:#A8451F!important}
 .edit h3{font-size:19px;letter-spacing:0;line-height:1.25}
 .edit p{font-size:15.5px;line-height:1.5}
@@ -334,6 +339,90 @@ footer nav{display:flex;gap:6px;flex-wrap:wrap}
 footer nav a{font-size:13px;font-weight:800;letter-spacing:0;text-transform:none;text-decoration:none;padding:7px 14px;border-radius:999px;border:0;background:#fff;color:var(--ink);box-shadow:var(--shadow-sm);transition:background .2s}
 footer nav a:hover{background:var(--gold);color:var(--ink)}
 
+
+/* 04 батьки */
+.par-top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:18px 30px;align-items:start}
+.par-top .lead{font-size:clamp(17.5px,1.9vw,20px);font-weight:700;line-height:1.55;color:var(--ink)}
+.par-top .lead::first-letter{float:left;font-family:var(--hand);font-weight:700;font-size:3.6em;line-height:.8;margin:.08em .1em 0 0;color:var(--sky)}
+.par-top .lead+p{margin-top:10px;font-size:16.5px}
+.bridge{display:grid;gap:8px;padding:16px 18px;border-radius:var(--r-md);background:#fff;box-shadow:var(--shadow-sm);border-top:6px solid var(--sky);transform:rotate(1deg)}
+.bridge .kick{color:#1F6E9C}
+.bridge q{font-family:var(--hand);font-weight:700;font-size:clamp(24px,2.6vw,30px);line-height:1.1;color:var(--ink);quotes:"«" "»"}
+.bridge small{font-size:13px;font-weight:800;color:var(--ink-2)}
+.bridge p{font-size:15px;line-height:1.5;color:var(--text)}
+.shift{display:grid;gap:0;padding:clamp(14px,2.4vw,22px);border-radius:var(--r-lg);background:#fff;box-shadow:var(--shadow)}
+.shift h3{font-size:clamp(22px,2.6vw,28px);margin-bottom:10px}
+.shift h3 em{font-family:var(--hand);font-style:normal;font-weight:700;color:var(--sky);font-size:1.18em}
+.shift ul{list-style:none;margin:0;padding:0;display:grid}
+.shift li{display:grid;grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);gap:8px;align-items:center;padding:9px 0;border-top:2px dotted var(--rule)}
+.shift li.hd{border-top:0;padding-top:0}
+.shift li.hd span{font-size:11.5px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.shift li.hd span:last-child{color:#1F6E9C}
+.shift .was{font-size:15px;color:var(--ink-2);text-decoration:line-through;text-decoration-color:rgba(226,80,107,.55);text-decoration-thickness:2px}
+.shift .now{font-size:15.5px;font-weight:800;color:var(--ink);background:var(--sky-soft);padding:6px 12px;border-radius:14px}
+.shift .ar{justify-self:center;color:var(--sky);font-weight:900;font-size:20px}
+.cycle{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;counter-reset:c}
+.cycle li{counter-increment:c;display:grid;gap:6px;align-content:start;padding:14px 14px 16px;border-radius:var(--r-md);background:#fff;box-shadow:var(--shadow-sm);position:relative}
+.cycle li::before{content:counter(c);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:16px;color:#fff;background:var(--sky)}
+.cycle li:nth-child(2)::before{background:var(--leaf)}.cycle li:nth-child(3)::before{background:var(--gold);color:#5A3D00}.cycle li:nth-child(4)::before{background:var(--pumpkin)}.cycle li:nth-child(5)::before{background:var(--berry)}
+.cycle b{font-family:var(--hand);font-size:26px;font-weight:700;line-height:1.05;color:var(--ink)}
+.cycle p{font-size:14.5px;line-height:1.45}
+.cycle small{justify-self:start;font-size:12px;font-weight:800;padding:2px 10px;border-radius:999px;background:var(--sky-soft);color:#1F6E9C}
+.cyc-note{font-size:14.5px;font-weight:700;color:var(--ink-2);text-align:center}
+.cyc-note b{color:var(--sky)}
+#s04 .chap>header .kick{background:var(--sky-soft);color:#1F6E9C!important}
+#s04 .chap>header h3 em{color:var(--sky)}
+.chap .note{font-size:14.5px;color:var(--ink-2);max-width:66ch}
+.plan{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.plan div{display:grid;gap:4px;align-content:start;padding:10px 12px;border-radius:var(--r-md);background:var(--sky-soft)}
+.plan div:nth-child(2){background:var(--leaf-soft)}.plan div:nth-child(3){background:var(--gold-soft)}.plan div:nth-child(4){background:var(--berry-soft)}
+.plan b{font-size:15px;font-weight:900;color:var(--ink);line-height:1.25}
+.plan span{font-size:13.5px;line-height:1.4;color:var(--ink-2)}
+.meet{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.meet li{display:grid;grid-template-columns:86px minmax(0,1fr);gap:10px;align-items:baseline;font-size:15px}
+.meet li span{font-size:12px;font-weight:900;letter-spacing:.04em;padding:2px 8px;border-radius:999px;background:var(--gold-soft);color:#7A5200;text-align:center}
+.chan{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chan div{display:grid;gap:4px;align-content:start;padding:12px 14px;border-radius:var(--r-md);background:var(--leaf-soft)}
+.chan div+div{background:var(--berry-soft)}
+.chan b{font-size:16px;font-weight:900;color:var(--ink)}
+.chan span{font-size:14px;line-height:1.45}
+.changes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;list-style:none;margin:0;padding:0}
+.changes li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;padding:12px 14px;border-radius:var(--r-md);background:#fff;box-shadow:var(--shadow-sm);font-size:15.5px;line-height:1.5}
+.changes li::before{content:"✓";width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:14px;color:#fff;background:var(--sky)}
+.changes b{color:var(--ink)}
+@media (max-width:1000px){.cycle{grid-template-columns:repeat(3,minmax(0,1fr))}.plan{grid-template-columns:1fr 1fr}.edit{grid-template-columns:1fr 1fr}.toc .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:860px){.par-top,.changes{grid-template-columns:1fr}.bridge{transform:none}}
+@media (max-width:560px){.cycle,.plan,.chan,.edit{grid-template-columns:1fr}.shift li{grid-template-columns:1fr;gap:4px}.shift .ar{justify-self:start;transform:rotate(90deg)}.shift li.hd{display:none}.meet li{grid-template-columns:1fr;gap:2px}.meet li span{justify-self:start}}
+
+/* 04 інтерактивні кроки */
+.steps{display:grid;gap:10px}
+.step{--c:var(--sky);--cs:var(--sky-soft);border-radius:var(--r-md);background:#fff;box-shadow:var(--shadow-sm);transition:box-shadow .25s}
+.step:nth-child(2){--c:var(--leaf);--cs:var(--leaf-soft)}.step:nth-child(3){--c:#E0A100;--cs:var(--gold-soft)}.step:nth-child(4){--c:var(--pumpkin);--cs:var(--pumpkin-soft)}.step:nth-child(5){--c:var(--berry);--cs:var(--berry-soft)}
+.step[open]{box-shadow:var(--shadow);background:linear-gradient(90deg,var(--cs) 0 6px,#fff 6px)}
+.step summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:44px minmax(0,1fr) 34px;gap:14px;align-items:center;padding:14px 16px}
+.step summary::-webkit-details-marker{display:none}
+.step .n{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:19px;color:#fff;background:var(--c);transform:rotate(-6deg)}
+.step .h{display:grid;gap:2px;min-width:0}
+.step .h b{font-family:var(--hand);font-size:clamp(25px,2.6vw,30px);font-weight:700;line-height:1.05;color:var(--ink)}
+.step .ba{font-size:14px;font-weight:700;color:var(--ink)}
+.step .ba s{color:var(--ink-2);font-weight:600;text-decoration-color:rgba(226,80,107,.6);text-decoration-thickness:2px}
+.step .ba i{font-style:normal;color:var(--c);font-weight:900;margin:0 6px}
+.step .pm{width:34px;height:34px;border-radius:50%;background:var(--cs);position:relative;transition:transform .3s,background .2s}
+.step .pm::before,.step .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:3px;margin:-1.5px 0 0 -7px;border-radius:2px;background:var(--c)}
+.step .pm::after{transform:rotate(90deg);transition:transform .3s}
+.step[open] .pm::after{transform:rotate(0)}
+.step summary:hover .pm{background:var(--c)}.step summary:hover .pm::before,.step summary:hover .pm::after{background:#fff}
+.step .sb{display:grid;gap:12px;padding:0 20px 18px 74px;max-width:calc(74px + 70ch)}
+.step[open] .sb{animation:stepIn .3s ease}
+@keyframes stepIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.step .note{font-size:14.5px;color:var(--ink-2)}
+.step .asks li{font-size:clamp(21px,2.2vw,25px)}
+.step .plan{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;counter-reset:none}
+.step .plan li{display:grid;gap:2px;padding:10px 12px;border-radius:14px;background:var(--cs);font-size:13.5px;color:var(--ink-2);line-height:1.35}
+.step .plan b{font-size:15px;color:var(--ink)}
+.verdict .impact{position:relative;z-index:1;font-size:15.5px;line-height:1.55;max-width:70ch;padding-top:12px;border-top:2px dotted rgba(168,69,31,.25)}
+@media (max-width:860px){.step .plan{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.step summary{grid-template-columns:38px minmax(0,1fr) 30px;gap:10px;padding:12px}.step .n{width:38px;height:38px;font-size:16px}.step .pm{width:30px;height:30px}.step .sb{padding:0 14px 16px}.step .plan{grid-template-columns:1fr}}
 @media (max-width:1000px){
   .board{columns:2}
   .nums{grid-template-columns:repeat(4,minmax(0,1fr))}
@@ -386,7 +475,7 @@ footer nav a:hover{background:var(--gold);color:var(--ink)}
 <div class="bar"><div class="wrap">
   <a class="logo" href="#top">Тьюторинг<span>VI конгрес</span></a>
   <nav aria-label="Розділи">
-    <a href="#s01">Досьє</a><a href="#s02">Практика</a><a href="#s03">Виховна робота</a><a href="#s04">Колегам</a>
+    <a href="#s01">Досьє</a><a href="#s02">Практика</a><a href="#s03">Виховна робота</a><a href="#s04">Батьки</a><a href="#s05">Колегам</a>
   </nav>
 </div></div>
 
@@ -395,12 +484,7 @@ footer nav a:hover{background:var(--gold);color:var(--ink)}
   <div class="wrap">
     <div class="mast">
       <div class="name">Тьютор<i>инг</i></div>
-      <div class="issue"><b>VI</b>Міжнародний конгрес<br>Листопад 2024<span class="autumn-tag">осінній випуск</span></div>
-    </div>
-    <div class="lines">
-      <a href="#s02"><b>Від ідей до практики</b><span>персоналізація і життєстійкість</span></a>
-      <a href="#s03"><b>5 років онлайн</b><span>виховна робота за екраном</span></a>
-      <a href="#s04"><b>Адвент-календар</b><span>замість звітів</span></a>
+      <div class="issue"><b>VI</b>Міжнародний конгрес<br>Листопад 2024</div>
     </div>
     <div class="headline">
       <span class="kick">VI Міжнародний конгрес тьюторингу</span>
@@ -413,7 +497,7 @@ footer nav a:hover{background:var(--gold);color:var(--ink)}
 <section class="letter" aria-label="Вступ">
   <div class="wrap">
     <div class="sig"><span class="kick">Слово автора</span><b>Алла Сіянко</b><span>вчитель фізики та математики, Вищетарасівський ліцей</span></div>
-    <p class="lead">Третя подія 2024 року в моєму тьюторському шляху. Конгрес був про те, як допомогти дитині встояти, коли навколо війна. Для мене це стало зв'язкою між уроками математики й виховною роботою онлайн.</p>
+    <p class="lead">Третя подія 2024 року в моєму тьюторському шляху. Конгрес був про те, як допомогти дитині встояти, коли навколо війна. Для мене це стало зв'язкою між уроками математики, виховною роботою онлайн і співпрацею з родинами моїх учнів.</p>
   </div>
 </section>
 
@@ -421,7 +505,8 @@ footer nav a:hover{background:var(--gold);color:var(--ink)}
   <a href="#s01"><i>01</i><b>Конгрес у цифрах</b></a>
   <a href="#s02"><i>02</i><b>Від ідей до практики</b></a>
   <a href="#s03"><i>03</i><b>Виховна робота онлайн</b></a>
-  <a href="#s04"><i>04</i><b>Що можу запропонувати колегам</b></a>
+  <a href="#s04"><i>04</i><b>Батьки — партнери</b></a>
+  <a href="#s05"><i>05</i><b>Що можу запропонувати колегам</b></a>
 </div></nav>
 
 <main><div class="wrap" style="display:grid;gap:inherit">
@@ -599,12 +684,101 @@ footer nav a:hover{background:var(--gold);color:var(--ink)}
   <blockquote class="belief">Подолання освітніх втрат починається там, де дитина відчуває безпеку, довіру й право на власний темп.</blockquote>
 </section>
 
-<section id="s04"><svg class="deco d3" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2c4 3 6 7 5 11-1 3.5-3 6-5 7-2-1-4-3.5-5-7-1-4 1-8 5-11z" fill="#D9A43A"/><path d="M12 6v15" stroke="rgba(60,25,10,.3)" stroke-width=".7"/></svg>
-  <div class="sh"><span class="no">04</span><h2>Що можу запропонувати <em>колегам</em></h2><span class="kick">моя добірка</span></div>
+<section id="s04"><svg class="deco d2" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l1.6 3.6 3.2-1.4-.8 3.6 3.6.4-2.6 2.6 2.4 1.8-3.6 1-.2 3.4-3-2-1.6 3.4L10.4 15l-3 2-.2-3.4-3.6-1 2.4-1.8L3.4 8.2 7 7.8l-.8-3.6 3.2 1.4z" fill="#3E9FD6"/><path d="M12 6v15" stroke="rgba(60,25,10,.3)" stroke-width=".7"/></svg>
+  <div class="sh"><span class="no">04</span><h2>Батьки — <em>партнери</em></h2><span class="kick">від інформування до партнерства</span></div>
+
+  <div class="par-top">
+    <div>
+      <p class="lead">П'ять років онлайн-навчання в зоні бойових дій показали мені: співпраця з батьками не може триматися лише на повідомленнях у Viber-групі й розмовах про оцінки. Їй потрібні постійний діалог, довіра й розуміння того, що насправді відбувається в кожній родині.</p>
+      <p>Дитина вчиться за екраном удома. Поруч із нею весь цей час — батьки, які бачать її втому, тривогу й зриви раніше за мене. Якщо вони лише читають мої оголошення, половина підтримки губиться. Тому я перебудувала роботу з родинами так само, як роботу з учнями: через індивідуальний супровід і спільний пошук рішень.</p>
+    </div>
+    <aside class="bridge">
+      
+      <q>Тьютор як значущий дорослий для дитини і всієї сім'ї</q>
+      <small>Марина Крісов, VI Міжнародний конгрес тьюторингу</small>
+      <p>Після цього виступу я перестала бачити тьюторський супровід як роботу лише з учнем. Персоналізація, про яку я пишу в розділі 02, не спрацює, якщо вдома про неї не знають. А життєстійкість дитини будується там, де школа й родина діють узгоджено.</p>
+    </aside>
+  </div>
+
+  <div class="st-head"><h3>Моя система: <em>п'ять кроків</em></h3><span class="kick">натисніть на крок</span></div>
+  <div class="steps">
+    <details class="step" name="steps" open>
+      <summary>
+        <span class="n">1</span>
+        <span class="h"><b>Регулярно чути батьків</b><span class="ba"><s>опитування про організаційне</s><i aria-hidden="true">→</i>про те, що турбує родину</span></span>
+        <span class="pm" aria-hidden="true"></span>
+      </summary>
+      <div class="sb">
+        <p>Раз на місяць надсилаю коротку Google-форму. Заповнюється з телефона за кілька хвилин, підпис необов'язковий: так батьки пишуть відвертіше. У кожній формі є три запитання про родину:</p>
+        <ul class="asks"><li>«Що зараз найбільше турбує вас щодо дитини?»</li><li>«Якої підтримки від школи вам бракує?»</li><li>«Про що хотіли б поговорити на зустрічі?»</li></ul>
+        <p class="note">Підсумки коротко публікую в групі: що турбує найчастіше і що з цим робимо далі.</p>
+      </div>
+    </details>
+    <details class="step" name="steps">
+      <summary>
+        <span class="n">2</span>
+        <span class="h"><b>Бачити дитину цілком</b><span class="ba"><s>розмова про оцінки</s><i aria-hidden="true">→</i>про навчання й самопочуття</span></span>
+        <span class="pm" aria-hidden="true"></span>
+      </summary>
+      <div class="sb">
+        <p>Відповіді батьків кладу поруч з учнівською анкетою «Як минув мій тиждень?». Коли той самий сигнал є і в дитини, і в родини, це привід для окремої розмови або теми наступної зустрічі. Звертаю увагу на мотивацію, втому від екрана, труднощі в спілкуванні, потребу в підтримці й відчуття безпеки.</p>
+      </div>
+    </details>
+    <details class="step" name="steps">
+      <summary>
+        <span class="n">3</span>
+        <span class="h"><b>Шукати рішення разом</b><span class="ba"><s>повідомити про проблему</s><i aria-hidden="true">→</i>домовитися про кроки</span></span>
+        <span class="pm" aria-hidden="true"></span>
+      </summary>
+      <div class="sb">
+        <p>Якщо є труднощі з навчанням, дисципліною чи мотивацією, запрошую батьків на особисту розмову (дзвінок або відеозв'язок). Разом заповнюємо чотири пункти:</p>
+        <ol class="plan"><li><b>Що бачимо</b>факти без оцінок</li><li><b>Що робить школа</b>один-два кроки</li><li><b>Що робить родина</b>один-два посильні кроки</li><li><b>Коли звіряємося</b>конкретна дата</li></ol>
+        <p class="note">Кроків небагато, щоб їх справді можна було виконати. На наступній розмові дивимося, що допомогло.</p>
+      </div>
+    </details>
+    <details class="step" name="steps">
+      <summary>
+        <span class="n">4</span>
+        <span class="h"><b>Зустрічі, корисні для родин</b><span class="ba"><s>звіт про успішність</s><i aria-hidden="true">→</i>тема, яку обрали батьки</span></span>
+        <span class="pm" aria-hidden="true"></span>
+      </summary>
+      <div class="sb">
+        <p>Тему зустрічі обирають батьки в опитуванні. Будую її так: <b>5 хв</b> організаційне, <b>25 хв</b> тема з прикладами з досвіду родин, <b>10 хв</b> одна річ, яку можна спробувати вдома цього тижня.</p>
+        <p class="note">Теми на вибір: як підтримати підлітка під час тривалого дистанційного навчання; правила користування гаджетами: домовлятися, а не забороняти; як підтримувати мотивацію; як зберегти довірливе спілкування.</p>
+      </div>
+    </details>
+    <details class="step" name="steps">
+      <summary>
+        <span class="n">5</span>
+        <span class="h"><b>Постійний зворотний зв'язок</b><span class="ba"><s>Viber як дошка оголошень</s><i aria-hidden="true">→</i>два канали зв'язку</span></span>
+        <span class="pm" aria-hidden="true"></span>
+      </summary>
+      <div class="sb">
+        <p><b>Viber-група</b> лишається каналом оперативної комунікації: розклад, зміни, оголошення. <b>Особисто</b> пишу або телефоную, коли питання незручно обговорювати при всіх. У групі закріплено: «Якщо питання стосується лише вашої дитини, пишіть мені особисто».</p>
+        <p class="note">Наступне опитування показує, що спрацювало, і цикл починається знову з кроку 1.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="verdict">
+    <span class="kick">Мій висновок</span>
+    <p class="big">Батьки — не отримувачі інформації від класного керівника, а <em>повноправні партнери</em> у створенні умов для розвитку й емоційного благополуччя дитини.</p>
+    <div class="voices">
+      <div><b>«Мене почують»</b><span>діалог</span></div>
+      <div><b>«Мої труднощі не знецінять»</b><span>довіра</span></div>
+      <div><b>«Рішення шукатимемо разом»</b><span>партнерство</span></div>
+    </div>
+    <p class="impact">Що це дало моїй роботі: теми зустрічей тепер визначають батьки; про труднощі дізнаюся раніше, ніж вони стануть помітні в оцінках; кожна розмова про проблему закінчується планом. Виховна робота з учнями й співпраця з родинами стали однією системою.</p>
+  </div>
+</section>
+
+<section id="s05"><svg class="deco d3" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2c4 3 6 7 5 11-1 3.5-3 6-5 7-2-1-4-3.5-5-7-1-4 1-8 5-11z" fill="#D9A43A"/><path d="M12 6v15" stroke="rgba(60,25,10,.3)" stroke-width=".7"/></svg>
+  <div class="sh"><span class="no">05</span><h2>Що можу запропонувати <em>колегам</em></h2><span class="kick">моя добірка</span></div>
   <div class="edit">
     <article><span class="tag">практика</span><h3>Хід онлайн-заняття на 6 кроків</h3><p><span class="hl">Від check-in до check-out, з місцем для рухової паузи й дихальної вправи на випадок тривоги.</span></p></article>
     <article><span class="tag">діагностика</span><h3>Тест як карта труднощів</h3><p><span class="hl">Як скласти короткий вхідний тест і за ним розподілити час та завдання між учнями.</span></p></article>
     <article><span class="tag">виховна робота</span><h3>Онлайн-клас, де ніхто не губиться</h3><p><span class="hl">Анкета «Як минув мій тиждень?», група в Telegram, гайд для учня і цифровий навігатор класу.</span></p></article>
+    <article><span class="tag">батьки</span><h3>Збори без звітування</h3><p><span class="hl">Шаблон опитування для батьків, план спільних кроків «школа — родина» і сценарій зустрічі на 40 хвилин.</span></p></article>
   </div>
   <div class="advent">
     <div>
@@ -645,6 +819,7 @@ footer nav a:hover{background:var(--gold);color:var(--ink)}
   v.addEventListener('play',function(){on(true)});
   v.addEventListener('pause',function(){on(false)});
   v.addEventListener('ended',function(){on(false)});
+  document.querySelectorAll('details.step').forEach(function(d,_,all){d.addEventListener('toggle',function(){if(d.open)all.forEach(function(o){if(o!==d)o.open=false;});});});
   document.querySelectorAll('a[href^="#s"]').forEach(function(a){a.addEventListener('click',function(){if(a.getAttribute('href')==='#s01'){var f=document.getElementById('fold01');if(f)f.open=true;}});});
 })();
 </script>
